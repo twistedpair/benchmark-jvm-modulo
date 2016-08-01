@@ -16,7 +16,7 @@ object RangeBenchmark extends Bench[Double] {
 
   /* inputs */
 
-  val divisor = 8^10
+  val divisor = 2^29 // big pow 2, lots of factors
   val size = 20
   val repsPerRun = 1000//*1000 // 1000*1000*100 // 0*1000*1000
   val dividends = Gen.range("dividend")(Int.MaxValue-size, Int.MaxValue, 1)
