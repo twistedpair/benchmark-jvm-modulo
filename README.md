@@ -6,7 +6,7 @@ Set SBT to get a lot of memory, so we minimize GC overhead. Resize heap to max s
 
 ```bash
 cd scala-meter/
-SBT_OPTS="-Xms2G -Xmx2G -Xss1M"
+SBT_OPTS="-Xms1G -Xmx1G -Xss1M"
 sbt test
 ```
 
